@@ -40,6 +40,7 @@ window.addEventListener('load', (event) => {
         colorDisplay.textContent = pickedColor;
         for(var i = 0; i < squares.length; i++) {
             squares[i].style.background = colors[i];
+            squares[i].style.display = "block"
         }
     })
 
@@ -96,8 +97,8 @@ window.addEventListener('load', (event) => {
 
     // function to pick out colors at random
     function pickColor(){
-        var random = Math.floor(Math.random() * colors.length)
-        return colors[random]
+    var random = Math.floor(Math.random() * colors.length)
+    return colors[random]
     }
 
     // function to generate colors at random
